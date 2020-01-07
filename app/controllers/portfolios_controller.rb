@@ -26,11 +26,11 @@ class PortfoliosController < ApplicationController
   end
 
   def edit
-    @portfolio_item = Portfolio.find(params[:id])
+    set_portfolio
   end
 
   def update
-    @portfolio_item = Portfolio.find(params[:id])
+    set_portfolio
     respond_to do |format|
       if @portfolio_item.update(portfolio_params)
         format.html {redirect_to portfolios_path, notice: "This item successfully updated."}
@@ -41,11 +41,11 @@ class PortfoliosController < ApplicationController
   end
 
   def show
-    @portfolio_item = Portfolio.find(params[:id])
+    set_portfolio
   end
   def destroy
     # Perfom the lookup
-    @portfolio_item = Portfolio.find(params[:id])
+    set_portfolio
     # Destryo/delete the record
     @portfolio_item.destroy
     # Redirect
@@ -56,5 +56,8 @@ class PortfoliosController < ApplicationController
   private
   def portfolio_params
     params.require(:portfolio).permit(:title, :subtitle, :body, technologies_attributes: [:name])
+  end
+  def set_portfolio
+    @portfolio_item = Portfolio.find(params[:id])
   end
 end
