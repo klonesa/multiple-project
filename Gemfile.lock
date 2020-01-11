@@ -1,9 +1,3 @@
-GIT
-  remote: https://github.com/habipyesilyurt17/yesilyurt_view_tool
-  revision: 227c388e0973f3dd9ec31f917090ebf154ea2d7f
-  specs:
-    yesilyurt_view_tool (0.1.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -185,6 +179,7 @@ GEM
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.4)
+    yesilyurt_view_tool (0.1.0)
 
 PLATFORMS
   ruby
@@ -207,7 +202,7 @@ DEPENDENCIES
   tzinfo-data
   uglifier (>= 1.3.0)
   web-console (>= 3.3.0)
-  yesilyurt_view_tool!
+  yesilyurt_view_tool (~> 0.1.0)
 
 BUNDLED WITH
    2.1.4
