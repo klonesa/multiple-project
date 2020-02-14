@@ -53,7 +53,7 @@ gem 'friendly_id', '~> 5.2.4'
 gem 'devise', '~> 4.7', '>= 4.7.1'
 
 gem 'bootstrap', '~> 4.4.1'
-
+gem 'jquery-rails', '~> 4.3', '>= 4.3.5'
 gem 'yesilyurt_view_tool', '~> 0.1.0'
 gem 'petergate', '~> 2.0', '>= 2.0.1'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'
