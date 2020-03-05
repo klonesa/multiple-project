@@ -250,6 +250,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap (~> 4.4.1)
   byebug
+  carrierwave (~> 2.0)
   carrierwave-aws (~> 1.4)
   coffee-rails (~> 4.2)
   devise (~> 4.7, >= 4.7.1)
